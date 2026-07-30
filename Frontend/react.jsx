@@ -11,10 +11,21 @@ function rgdform(){
     
 
     const handleChange = (e) => {
-        setName({name, [e.target.name]: e.target.value})
-        setName({rgdNo, [e.target.rgdNo]: e.target.value})
-        setName({email, [e.target.email]: e.target.value})
-        setName({password, [e.target.password]: e.target.value})
-        setName({age, [e.target.age]: e.target.value})
+        const {name,value} = e.target;
+        if(name=="name"){
+            setName(value)
+        }
+        if(name=="rgdNo"){
+            setRgdNo(value)
+        }
+        if(name=="email"){
+            setEmail(value)
+        }
+        if(name=="password"){
+            setPassword(value)
+        }
+        if(name=="age"){
+            setAge(value)
+        }
     }
 }
