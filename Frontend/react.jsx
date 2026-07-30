@@ -28,4 +28,21 @@ function rgdform(){
             setAge(value)
         }
     }
+    return(
+        <div>
+            <form>
+                <input name="name" placeholder="Name" onChange={handleChange} ></input>
+                <input name="rgdNo" placeholder="Registration Number" onChange={handleChange} ></input>
+
+                <input name="email" placeholder="Email" onChange={handleChange} ></input>
+                <input name="password" placeholder="Password" onChange={handleChange} ></input>
+                <input name="age" placeholder="age" onChange={handleChange} ></input>
+
+
+    <button type="submit">Submit Form</button>
+            </form>
+        </div>
+    )
 }
+
+export default rgdform;
