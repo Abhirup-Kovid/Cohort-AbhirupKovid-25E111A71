@@ -7,10 +7,9 @@ function RgdForm(){
     const [password, setPassword]= useState('');
     const [age, setAge]=useState('');
     const [message, setMessage]= useState('');
-    
-    
 
-    const handleChange = (e) => {
+
+       const handleChange = (e) => {
         const {name,value} = e.target;
         if(name=="name"){
             setName(value)
@@ -32,7 +31,7 @@ function RgdForm(){
         <div>
             <form>
                 <input name="name" placeholder="Name" onChange={handleChange} ></input>
-                <input name="rgdNo" placeholder="Registration Number" onChange={handleChange} ></input>
+                <input name="rgdNo" placeholder="Registration Number" onChange={handleChange}></input>
 
                 <input name="email" placeholder="Email" onChange={handleChange} ></input>
                 <input name="password" placeholder="Password" onChange={handleChange} ></input>
