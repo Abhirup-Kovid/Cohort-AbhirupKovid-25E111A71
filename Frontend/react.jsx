@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function rgdform(){
+function RgdForm(){
     const [name, setName]=useState('');
     const [rgdNo, setRgdNo]=useState('');
     const [email, setEmail]=useState('');
@@ -45,4 +45,4 @@ function rgdform(){
     )
 }
 
-export default rgdform;
+export default RgdForm;
